@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+/* Barra superior */
+#nav_bar_top {
+  background-color: #444;
+  height: 70px;
+  position: relative;
+}
+
+#nav_bar_top h3 {
+  color: #fff;
+  margin-left: 10px;
+  padding-top: 20px;
+  font-size: 18px;
+}
+
+/* Contêiner da imagem com position */
+#nav_top_img {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+#nav_top_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 50%;
+}
+
+/*Calendário -------------------------------------------------------------- */
+
+#container_calender{
+    display: flex;
+    justify-content: center;
+}
+
+#calender{
+    display: flex;
+}
+
+#calender .day{
+    padding: 5px;
+    background-color: #222;
+    border:solid 1px #666;
+    font-size: 16px;
+    width: 53px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+/* Botão "Adicione sua tarefa" */
+#container_tasks {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#tasks {
+  background-color: #444;
+  font-size: 15px;
+  color: #fff;
+  height: 47px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  text-align: center;
+}
+
+/* Cada tarefa */
+#importance_tasks {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 20px;
+  gap: 10px;
+}
+
+.importance_ball {
+  border-radius: 50%;
+  background-color: red;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+}
+
+.title_tasks {
+  background-color: #4b4444;
+  height: 30px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 0px 7px 7px 0px;
+  font-size: 13px;
+  color: white;
+  width: auto;
+}

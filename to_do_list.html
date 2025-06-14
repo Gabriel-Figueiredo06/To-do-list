@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style_to_do_list.css" />
+  </head>
+  <body>
+    <!-- Fundo + Nome do usuário -->
+    <section id="fundo_user">
+      <div>
+        <h1>Olá, <span id="nome_usuario">Usuário</span></h1>
+        <img
+          src="img/user-icon-on-transparent-background-free-png.webp"
+          alt="Imagem do usuário"
+        />
+      </div>
+    </section>
+
+    <!-- Data e título -->
+    <section>
+      <div id="container_actual_days">
+        <div id="actual_days"><h4>11.05</h4></div>
+      </div>
+      <div id="container_tasks">
+        <div id="tasks">
+          <h4>Tarefas do dia</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards de tarefas -->
+    <main>
+      <div id="container_cards">
+        <!-- Card 1 -->
+        <div class="cards">
+          <div class="title_tasks">
+            <h3>Tarefa 1</h3>
+          </div>
+          <div class="container_img_tasks">
+            <button id="check_task_1" class="btn-task">
+              <img src="img/CheckCircle1.png" alt="Checagem de tarefas" />
+            </button>
+            <button id="circle_tasks_1" class="btn-task">
+              <img src="img/MinusCircle_2.png" alt="Editar tarefas" />
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="cards">
+          <div class="title_tasks">
+            <h3>Tarefa 2</h3>
+          </div>
+          <div class="container_img_tasks">
+            <button id="check_task_2" class="btn-task">
+              <img src="img/CheckCircle1.png" alt="Checagem de tarefas" />
+            </button>
+            <button id="circle_tasks_2" class="btn-task">
+              <img src="img/MinusCircle_2.png" alt="Editar tarefas" />
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="cards">
+          <div class="title_tasks">
+            <h3>Tarefa 3</h3>
+          </div>
+          <div class="container_img_tasks">
+            <button id="check_task_3" class="btn-task">
+              <img src="img/CheckCircle1.png" alt="Checagem de tarefas" />
+            </button>
+            <button id="circle_tasks_3" class="btn-task">
+              <img src="img/MinusCircle_2.png" alt="Editar tarefas" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer Navegação -->
+    <footer>
+      <div id="container_footer">
+        <nav id="nav_footer">
+          <a href="search">
+            <img src="img/Search1.png" alt="Lupa de pesquisa" />
+          </a>
+          <a href="home">
+            <img src="img/Home2.png" alt="Home navegação" />
+          </a>
+          <a href="calendar">
+            <img src="img/CalendarDays.png" alt="Calendário" />
+          </a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
