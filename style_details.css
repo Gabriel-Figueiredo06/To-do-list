@@ -23,7 +23,7 @@ body {
 #edit_tasks h2 {
   padding: 10px;
   font-size: 15pt;
-  color: #F6F6F6;
+  color: #f6f6f6;
 }
 
 #container_details {
@@ -32,7 +32,7 @@ body {
 }
 
 #title_details_tasks {
-  background-color: #FFCb74;
+  background-color: #ffcb74;
   border-radius: 15px;
   height: 40px;
   width: 260px;
@@ -44,7 +44,7 @@ body {
 }
 
 #line {
-  border-bottom: 1px solid #F6F6F6;
+  border-bottom: 1px solid #f6f6f6;
   color: #111;
 }
 
@@ -54,7 +54,7 @@ body {
 }
 
 .filter_btn {
-  background-color: #FFCb74;
+  background-color: #ffcb74;
   height: 25px;
   width: 80px;
   display: flex;
@@ -63,6 +63,8 @@ body {
   margin: 12px;
   border-radius: 10px;
   margin-top: 30px;
+  border: none;
+  cursor: pointer;
 }
 
 .container_cards {
@@ -72,8 +74,8 @@ body {
 }
 
 .cards {
-  background-color: #2F2F2F;
-  border: 1px solid #FFCb74;
+  background-color: #2f2f2f;
+  border: 1px solid #ffcb74;
   height: 110px;
   width: 80%;
   margin-top: 20px;
@@ -84,7 +86,6 @@ body {
 }
 
 .color_importance {
-  background-color: yellow;
   border-radius: 50%;
   height: 30px;
   width: 30px;
@@ -94,10 +95,14 @@ body {
   margin: 5px;
 }
 
+.color_importance p {
+  display: none;
+}
+
 .txt_cards {
   margin: 10px;
   width: 80%;
-  color: #F6F6F6;
+  color: #f6f6f6;
   font-size: 12px;
 }
 

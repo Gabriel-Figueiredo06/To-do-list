@@ -9,46 +9,44 @@
   <body>
     <nav id="container_edit_tasks">
       <div id="edit_tasks">
-        <h2>Edite suas tarefas</h2>
+        <h2>Olá <span id="user-name">Usuário</span></h2>
         <img
           src="img/user-icon-on-transparent-background-free-png.webp"
           alt="ícone de usuário"
         />
       </div>
     </nav>
+
     <section>
       <div id="container_details">
         <div id="title_details_tasks">
-          <h3>Detelhes das tarefas</h3>
+          <h3>Detalhes das tarefas</h3>
         </div>
       </div>
       <div id="line">.</div>
       <div id="container_filter_btn">
-        <div class="filter_btn">Urgente</div>
-        <div class="filter_btn">Concluída</div>
-        <div class="filter_btn">Pendente</div>
+        <button class="filter_btn" data-status="urgente">Urgente</button>
+        <button class="filter_btn" data-status="concluida">Concluída</button>
+        <button class="filter_btn" data-status="pendente">Pendente</button>
       </div>
     </section>
+
     <main>
-      <div class="container_cards">
-        <div class="cards">
-          <div class="txt_cards"><h4>TESTE</h4></div>
-          <div class="card_icons">
-            <div class="color_importance">1</div>
-            <img src="img/GearWHITE.png" alt="Editar tarefa" />
+      <div class="container_cards" id="task-list">
+        <!-- EXEMPLO DE CARD -->
+        <div class="cards" data-task-id="1" data-status="pendente">
+          <div class="txt_cards">
+            <h4>Descrição da tarefa</h4>
           </div>
-        </div>
-        <div class="cards">
-          <div class="txt_cards"><h4>TESTE</h4></div>
           <div class="card_icons">
-            <div class="color_importance">1</div>
-            <img src="img/GearWHITE.png" alt="Editar tarefa" />
-          </div>
-        </div><div class="cards">
-          <div class="txt_cards"><h4>TESTE</h4></div>
-          <div class="card_icons">
-            <div class="color_importance">1</div>
-            <img src="img/GearWHITE.png" alt="Editar tarefa" />
+            <div
+              class="color_importance"
+              style="background-color: yellow"
+              title="Pendente"
+            ></div>
+            <a href="#" class="edit-task-btn" data-task-id="1">
+              <img src="img/GearWHITE.png" alt="Editar tarefa" />
+            </a>
           </div>
         </div>
       </div>
