@@ -1,0 +1,51 @@
+### Teste da API To-Do List
+
+### 1. Criar uma nova tarefa
+POST http://localhost:8080/api/tarefas
+Content-Type: application/json
+
+{
+  "descricao": "Testar a aplicação Spring Boot",
+  "nomeUsuario": "Teste",
+  "status": "PENDENTE"
+}
+
+### 2. Buscar todas as tarefas
+GET http://localhost:8080/api/tarefas
+
+### 3. Buscar tarefas por usuário
+GET http://localhost:8080/api/tarefas/usuario/João
+
+### 4. Buscar tarefas por status
+GET http://localhost:8080/api/tarefas/status/PENDENTE
+
+### 5. Buscar tarefa por ID (substitua {id} pelo ID real)
+GET http://localhost:8080/api/tarefas/1
+
+### 6. Marcar tarefa como concluída (substitua {id} pelo ID real)
+PATCH http://localhost:8080/api/tarefas/1/concluir
+
+### 7. Marcar tarefa como urgente (substitua {id} pelo ID real)
+PATCH http://localhost:8080/api/tarefas/1/urgente
+
+### 8. Atualizar tarefa (substitua {id} pelo ID real)
+PUT http://localhost:8080/api/tarefas/1
+Content-Type: application/json
+
+{
+  "descricao": "Tarefa atualizada",
+  "nomeUsuario": "João",
+  "status": "CONCLUIDA"
+}
+
+### 9. Deletar tarefa (substitua {id} pelo ID real)
+DELETE http://localhost:8080/api/tarefas/1
+
+### 10. Contar tarefas por status
+GET http://localhost:8080/api/tarefas/contar/status/PENDENTE
+
+### 11. Contar tarefas por usuário e status
+GET http://localhost:8080/api/tarefas/contar/usuario/João/status/PENDENTE
+
+### 12. Buscar tarefas pendentes ordenadas
+GET http://localhost:8080/api/tarefas/pendentes 
