@@ -1,0 +1,10 @@
+com\todo\config\WebConfig.class
+com\todo\model\Tarefa.class
+com\todo\controller\TarefaController.class
+com\todo\repository\TarefaRepository.class
+com\todo\model\StatusTarefa.class
+com\todo\config\DataInitializer.class
+com\todo\service\TarefaService.class
+com\todo\controller\WebController.class
+com\todo\model\Prioridade.class
+com\todo\TodoListApplication.class
